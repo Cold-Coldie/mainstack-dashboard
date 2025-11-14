@@ -45,14 +45,8 @@ const Revenue = () => {
         fetchUser();
         fetchWallet();
         fetchTransactions();
-    }, [
-        setIsLoadingTransactions,
-        setIsLoadingUser,
-        setIsLoadingWallet,
-        updateTransactions,
-        updateUser,
-        updateWallet
-    ]);
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, []);
 
     return (
         <div className={styles.container}>
