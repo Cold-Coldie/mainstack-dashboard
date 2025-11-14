@@ -17,35 +17,42 @@ const Revenue = () => {
     const { updateWallet, setIsLoading: setIsLoadingWallet } = useWallet();
     const { updateTransactions, setIsLoading: setIsLoadingTransactions } = useTransactions();
 
-    const fetchUser = async () => {
-        const url = `${API.BASE_URL}/user`;
-        setIsLoadingUser(true);
-        const { data } = await Http("GET", url);
-        updateUser(data);
-        setIsLoadingUser(false);
-    };
-
-    const fetchWallet = async () => {
-        const url = `${API.BASE_URL}/wallet`;
-        setIsLoadingWallet(true);
-        const { data } = await Http("GET", url);
-        updateWallet(data);
-        setIsLoadingWallet(false);
-    };
-
-    const fetchTransactions = async () => {
-        const url = `${API.BASE_URL}/transactions`;
-        setIsLoadingTransactions(true);
-        const { data } = await Http("GET", url);
-        updateTransactions(data);
-        setIsLoadingTransactions(false);
-    };
-
     useEffect(() => {
+        const fetchUser = async () => {
+            const url = `${API.BASE_URL}/user`;
+            setIsLoadingUser(true);
+            const { data } = await Http("GET", url);
+            updateUser(data);
+            setIsLoadingUser(false);
+        };
+
+        const fetchWallet = async () => {
+            const url = `${API.BASE_URL}/wallet`;
+            setIsLoadingWallet(true);
+            const { data } = await Http("GET", url);
+            updateWallet(data);
+            setIsLoadingWallet(false);
+        };
+
+        const fetchTransactions = async () => {
+            const url = `${API.BASE_URL}/transactions`;
+            setIsLoadingTransactions(true);
+            const { data } = await Http("GET", url);
+            updateTransactions(data);
+            setIsLoadingTransactions(false);
+        };
+
         fetchUser();
         fetchWallet();
         fetchTransactions();
-    }, []);
+    }, [
+        setIsLoadingTransactions,
+        setIsLoadingUser,
+        setIsLoadingWallet,
+        updateTransactions,
+        updateUser,
+        updateWallet
+    ]);
 
     return (
         <div className={styles.container}>
