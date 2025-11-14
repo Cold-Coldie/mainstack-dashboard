@@ -1,0 +1,41 @@
+.panelLoading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20vw;
+  height: 30vh;
+  border-radius: 10px;
+}
+
+.panel {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 250px;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.labelGroup {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.85rem;
+  color: #777;
+}
+
+.icon {
+  font-size: 0.9rem;
+  color: #aaa;
+  cursor: pointer;
+}
+
+h3 {
+  font-size: 1.3rem;
+  font-weight: 700;
+}

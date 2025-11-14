@@ -1,0 +1,46 @@
+.card {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  margin-bottom: 1.5rem;
+}
+
+.label {
+  font-size: 0.9rem;
+  color: #777;
+}
+
+.amount {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 0.3rem;
+}
+
+.button {
+  background: #000;
+  color: #fff;
+  border: none;
+  border-radius: 999px;
+  padding: 0.7rem 1.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+  transform: translateY(0.5rem);
+}
+
+.disabledButton {
+  background: #000;
+  color: #fff;
+  border: none;
+  border-radius: 999px;
+  padding: 0.7rem 1.5rem;
+  font-weight: 600;
+  cursor: not-allowed;
+  transition: opacity 0.2s ease;
+  transform: translateY(0.5rem);
+  opacity: 0.2;
+}
+
+.button:hover {
+  opacity: 0.8;
+}

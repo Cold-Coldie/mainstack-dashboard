@@ -1,0 +1,68 @@
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 350px;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+}
+
+.list li {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  cursor: pointer;
+  padding: 0.75rem 0.5rem;
+  border-radius: 10px;
+  transition: all 0.2s ease;
+  position: relative;
+}
+
+.list li:hover {
+  box-shadow: 0px 2px 4px 2px #202c330d;
+}
+
+.list li img {
+  border: 1px solid #202c330d;
+  padding: 0.5rem;
+  border-radius: 10px;
+  flex-shrink: 0;
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 0.25rem;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: #000;
+}
+
+.description {
+  font-size: 0.75rem;
+  color: #666;
+  line-height: 1.2;
+}
+
+.chevron {
+  color: #666;
+  font-size: 1.2rem;
+  transition: transform 0.2s ease;
+  flex-shrink: 0;
+}
+
+/* Optional: Add a subtle animation to the chevron */
+.list li:hover .chevron {
+  transform: translateX(2px);
+}

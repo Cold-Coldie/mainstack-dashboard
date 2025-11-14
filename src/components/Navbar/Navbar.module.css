@@ -1,0 +1,110 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem 2rem;
+  box-shadow: 0px 2px 4px 3px #202c330d;
+  background: #fff;
+  position: fixed;
+  top: 16px;
+  left: 2vw;
+  border-radius: 100px;
+  width: 90vw;
+  z-index: 10;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.navItems {
+  display: flex;
+  list-style: none;
+  gap: 2.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.navItems li {
+  color: #777;
+  cursor: pointer;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.6rem 1rem;
+  border-radius: 60px;
+  transition: all 0.2s ease;
+}
+
+.navItems li span {
+  display: flex;
+  align-items: center;
+  margin-left: 0.2rem;
+  padding-left: 0.7rem;
+  border-left: 1px solid gray;
+}
+
+.navItems li:hover {
+  background-color: #eff1f6;
+}
+
+.navItems li.active {
+  background-color: black;
+  color: white;
+}
+
+.navItemsRight {
+  display: flex;
+  list-style: none;
+  gap: 0.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.navItemsRight li {
+  color: #777;
+  cursor: pointer;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.6rem;
+  border-radius: 60px;
+  transition: all 0.2s ease;
+}
+
+.navItemsRight li:hover {
+  background-color: #eff1f6;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.profile {
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  gap: 0.7rem;
+  background-color: #eff1f6;
+  border-radius: 100px;
+  padding: 0.3rem 0.3rem;
+  color: #777;
+}
+
+.avatar {
+  background: black;
+  color: white;
+  border-radius: 50%;
+  height: 1.8rem;
+  width: 1.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+}
